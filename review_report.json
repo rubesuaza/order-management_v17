@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "structure_compliance": {
+    "score": 100,
+    "missing_files": [],
+    "notes": "No existe /architecture/directory_structure.md en el repositorio. Auditoría realizada contra estructura Hexagonal típica: capas domain (model, exception), application (ports in/out, services), infrastructure (adapters in/web, out/persistence, config) y tests equivalentes están presentes. Entry point ManagementApplication.java y build.gradle presentes."
+  },
+  "domain_compliance": {
+    "score": 100,
+    "missing_entities": [],
+    "notes": "No existe /architecture/domain_definition.md. Revisión contra código: Order (id, customerId, status, lines, getTotal), OrderLine (productId, quantity, unitPrice, getLineTotal), OrderStatus (DRAFT, CONFIRMED, SHIPPED, CANCELLED). Invariantes implementados: customerId/status/lines no nulos y al menos una línea; productId no nulo, quantity>0, unitPrice>=0. OrderDomainException para violaciones."
+  },
+  "test_results": {
+    "command_executed": "./gradlew test",
+    "passed": true,
+    "total_tests": 25,
+    "failures": 0,
+    "errors": 0,
+    "output_summary": "BUILD SUCCESSFUL. Tests: OrderApplicationServiceTest (Create 1, GetById 2), OrderTest (ValidConstruction 2, LinesImmutability 1, Invariants 5), OrderLineTest (ValidConstruction 3, Invariants 6), OrderRestControllerTest 3, OrderJpaAdapterTest 2."
+  },
+  "gaps": [
+    {
+      "severity": "low",
+      "category": "documentation",
+      "description": "No se encontraron archivos de definición en /architecture/ (directory_structure.md, domain_definition.md, tech_stack.md). La revisión se basó en la estructura y código existentes.",
+      "fix_suggestion": "Opcional: añadir carpeta architecture/ con los MD para futuras revisiones automatizadas contra una fuente de verdad explícita."
+    }
+  ],
+  "next_recommended_action": "git_operations"
+}

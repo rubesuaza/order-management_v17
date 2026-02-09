@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="invariantes" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-02-09T22:30:13" hostname="RubenS" time="0.023">
+  <properties/>
+  <testcase name="rechaza_customerId_nulo()" classname="com.example.management.domain.model.OrderTest$Invariants" time="0.002"/>
+  <testcase name="rechaza_status_nulo()" classname="com.example.management.domain.model.OrderTest$Invariants" time="0.002"/>
+  <testcase name="rechaza_customerId_vacio()" classname="com.example.management.domain.model.OrderTest$Invariants" time="0.003"/>
+  <testcase name="rechaza_lista_de_lineas_vacia()" classname="com.example.management.domain.model.OrderTest$Invariants" time="0.003"/>
+  <testcase name="rechaza_lista_de_lineas_nula()" classname="com.example.management.domain.model.OrderTest$Invariants" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
