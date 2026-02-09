@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="construcción válida" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-09T22:25:52" hostname="RubenS" time="0.009">
+  <properties/>
+  <testcase name="total_de_linea_es_cantidad_por_precio_unitario()" classname="com.example.management.domain.model.OrderLineTest$ValidConstruction" time="0.003"/>
+  <testcase name="acepta_precio_unitario_cero()" classname="com.example.management.domain.model.OrderLineTest$ValidConstruction" time="0.0"/>
+  <testcase name="crea_linea_con_cantidad_y_precio_unitario_positivos()" classname="com.example.management.domain.model.OrderLineTest$ValidConstruction" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
