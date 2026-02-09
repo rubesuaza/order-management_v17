@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 /**
  * Adaptador de entrada REST para la gestión de pedidos.
@@ -50,7 +49,7 @@ public class OrderRestController {
     private Order toDomain(OrderRequest request) {
         List<OrderLine> lines = request.lines().stream()
                 .map(l -> new OrderLine(l.productId(), l.quantity(), l.unitPrice()))
-                .collect(Collectors.toList());
+                .toList();
         return new Order(
                 request.id(),
                 request.customerId(),
@@ -62,7 +61,7 @@ public class OrderRestController {
     private OrderResponse toResponse(Order order) {
         List<OrderLineResponse> lineResponses = order.getLines().stream()
                 .map(l -> new OrderLineResponse(l.getProductId(), l.getQuantity(), l.getUnitPrice()))
-                .collect(Collectors.toList());
+                .toList();
         return new OrderResponse(
                 order.getId(),
                 order.getCustomerId(),

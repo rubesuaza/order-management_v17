@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-09T22:25:56" hostname="RubenS" time="0.401">
+<testsuite name="com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-09T22:30:17" hostname="RubenS" time="0.379">
   <properties/>
-  <testcase name="getOrder_returns_404_when_not_found()" classname="com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest" time="0.212"/>
-  <testcase name="createOrder_returns_201_and_order_body()" classname="com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest" time="0.165"/>
-  <testcase name="getOrder_returns_200_and_order_when_found()" classname="com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest" time="0.014"/>
-  <system-out><![CDATA[17:25:53.177 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest]: OrderRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:25:53.580 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.management.ManagementApplication for test class com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest
+  <testcase name="getOrder_returns_404_when_not_found()" classname="com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest" time="0.205"/>
+  <testcase name="createOrder_returns_201_and_order_body()" classname="com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest" time="0.157"/>
+  <testcase name="getOrder_returns_200_and_order_when_found()" classname="com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest" time="0.011"/>
+  <system-out><![CDATA[17:30:14.031 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest]: OrderRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:30:14.470 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.management.ManagementApplication for test class com.example.management.infrastructure.adapters.in.web.OrderRestControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -15,12 +15,12 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2026-02-09T17:25:54.325-05:00  INFO 60182 --- [management] [    Test worker] c.e.m.i.a.i.web.OrderRestControllerTest  : Starting OrderRestControllerTest using Java 17.0.18 with PID 60182 (started by root in /root/agent_code_generator/workspaces/order_management_workspace/order-management_v17)
-2026-02-09T17:25:54.333-05:00  INFO 60182 --- [management] [    Test worker] c.e.m.i.a.i.web.OrderRestControllerTest  : No active profile set, falling back to 1 default profile: "default"
-2026-02-09T17:25:56.465-05:00  INFO 60182 --- [management] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-02-09T17:25:56.466-05:00  INFO 60182 --- [management] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-02-09T17:25:56.477-05:00  INFO 60182 --- [management] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
-2026-02-09T17:25:56.549-05:00  INFO 60182 --- [management] [    Test worker] c.e.m.i.a.i.web.OrderRestControllerTest  : Started OrderRestControllerTest in 2.794 seconds (process running for 6.996)
+2026-02-09T17:30:15.373-05:00  INFO 62514 --- [management] [    Test worker] c.e.m.i.a.i.web.OrderRestControllerTest  : Starting OrderRestControllerTest using Java 17.0.18 with PID 62514 (started by root in /root/agent_code_generator/workspaces/order_management_workspace/order-management_v17)
+2026-02-09T17:30:15.377-05:00  INFO 62514 --- [management] [    Test worker] c.e.m.i.a.i.web.OrderRestControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T17:30:17.285-05:00  INFO 62514 --- [management] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-02-09T17:30:17.287-05:00  INFO 62514 --- [management] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-02-09T17:30:17.293-05:00  INFO 62514 --- [management] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2026-02-09T17:30:17.348-05:00  INFO 62514 --- [management] [    Test worker] c.e.m.i.a.i.web.OrderRestControllerTest  : Started OrderRestControllerTest in 2.728 seconds (process running for 7.002)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

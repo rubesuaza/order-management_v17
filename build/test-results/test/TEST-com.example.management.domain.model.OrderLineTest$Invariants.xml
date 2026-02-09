@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="invariantes" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-02-09T22:25:52" hostname="RubenS" time="0.037">
+<testsuite name="invariantes" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-02-09T22:30:13" hostname="RubenS" time="0.038">
   <properties/>
-  <testcase name="rechaza_precio_unitario_negativo()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.009"/>
-  <testcase name="rechaza_productId_vacio()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.003"/>
-  <testcase name="rechaza_productId_nulo()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.007"/>
+  <testcase name="rechaza_precio_unitario_negativo()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.007"/>
+  <testcase name="rechaza_productId_vacio()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.005"/>
+  <testcase name="rechaza_productId_nulo()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.003"/>
   <testcase name="rechaza_cantidad_negativa()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.002"/>
   <testcase name="rechaza_unitPrice_nulo()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.003"/>
-  <testcase name="rechaza_cantidad_cero()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.002"/>
+  <testcase name="rechaza_cantidad_cero()" classname="com.example.management.domain.model.OrderLineTest$Invariants" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

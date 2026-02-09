@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 /**
  * Adaptador de salida: persiste y recupera pedidos usando JPA.
@@ -32,27 +31,25 @@ public class OrderJpaAdapter implements OrderRepository {
 
     @Override
     public Optional<Order> findById(String id) {
-        return springRepository.findById(id).map(this::toDomain);
+        return springRepository.findByIdWithLines(id).map(this::toDomain);
     }
 
     private OrderEntity toEntity(Order order) {
         List<OrderLineEntity> lineEntities = order.getLines().stream()
                 .map(l -> new OrderLineEntity(l.getProductId(), l.getQuantity(), l.getUnitPrice()))
-                .collect(Collectors.toList());
-        OrderEntity entity = new OrderEntity(
+                .toList();
+        return new OrderEntity(
                 order.getId(),
                 order.getCustomerId(),
                 OrderStatusEntity.valueOf(order.getStatus().name()),
                 lineEntities
         );
-        lineEntities.forEach(l -> l.setOrder(entity));
-        return entity;
     }
 
     private Order toDomain(OrderEntity entity) {
         List<OrderLine> lines = entity.getLines().stream()
                 .map(l -> new OrderLine(l.getProductId(), l.getQuantity(), l.getUnitPrice()))
-                .collect(Collectors.toList());
+                .toList();
         return new Order(
                 entity.getId(),
                 entity.getCustomerId(),

@@ -33,7 +33,7 @@ public final class Order {
         this.id = id;
         this.customerId = customerId.trim();
         this.status = status;
-        this.lines = new ArrayList<>(lines);
+        this.lines = Collections.unmodifiableList(new ArrayList<>(lines));
     }
 
     public String getId() {
@@ -49,10 +49,10 @@ public final class Order {
     }
 
     /**
-     * Devuelve una copia de las líneas para preservar la inmutabilidad.
+     * Devuelve la vista inmutable de las líneas (ya calculada en el constructor).
      */
     public List<OrderLine> getLines() {
-        return Collections.unmodifiableList(new ArrayList<>(lines));
+        return lines;
     }
 
     /**
